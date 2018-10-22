@@ -1,0 +1,12 @@
+{
+  "extends": "airbnb",
+  "plugins": ["jest"],
+  "env": {
+    "jest/globals": true
+  },
+  "rules": {
+    "no-use-before-define": "off",
+    "no-return-assign": "off",
+    "import/extensions": "always"
+  }
+}

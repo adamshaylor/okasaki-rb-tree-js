@@ -1,0 +1,41 @@
+{
+  "name": "okasaki-rb-tree",
+  "version": "0.0.0",
+  "description": "An implementation of the Okasaki red-black tree in JavaScript",
+  "main": "tree/index.js",
+  "scripts": {
+    "test": "npm run lint && npm run unit",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "unit": "jest",
+    "unit:debug": "jest --debug --runInBand",
+    "unit:coverage": "jest --coverage",
+    "preversion": "npm test",
+    "postversion": "git push && git push --tags"
+  },
+  "keywords": [
+    "red-black tree",
+    "binary search tree",
+    "okasaki",
+    "functional",
+    "immutable",
+    "puritanical"
+  ],
+  "author": "Adam Shaylor <business@adamshaylor.com>",
+  "license": "ISC",
+  "repository": "github:adamshaylor/okasaki-rb-tree-js.git",
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "eslint": "^5.7.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^21.25.1",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "jest": "^23.6.0",
+    "regenerator-runtime": "^0.12.1"
+  }
+}
